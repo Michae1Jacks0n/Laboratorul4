@@ -1,0 +1,4 @@
+BiletStandard B00123 08:00 09:30
+Abonament A00456 07:00 08:00
+BiletReducere R00789 10:00 11:00
+BiletTuristic T00123 06:00 22:00
