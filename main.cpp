@@ -57,7 +57,9 @@ public:
         return (calculeazaDurata() / 60.0) * costPeOra;
     }
 
-    string getTip() const override { return "Bilet Standard"; }
+    string getTip() const override { 
+        return "Bilet Standard"; 
+    }
 };
 
 class Abonament : public Bilet {
@@ -67,9 +69,13 @@ public:
     Abonament(string numar, string oraStart, string oraSfarsit)
         : Bilet(numar, oraStart, oraSfarsit) {}
 
-    double calculeazaCost() const override { return costAbonament; }
+    double calculeazaCost() const override { 
+        return costAbonament; 
+    }
 
-    string getTip() const override { return "Abonament"; }
+    string getTip() const override { 
+        return "Abonament"; 
+    }
 };
 
 class BiletReducere : public Bilet {
@@ -83,7 +89,9 @@ public:
         return (calculeazaDurata() / 60.0) * costPeOra;
     }
 
-    string getTip() const override { return "Bilet Reducere"; }
+    string getTip() const override { 
+        return "Bilet Reducere"; 
+    }
 };
 
 class BiletTuristic : public Bilet {
@@ -93,9 +101,13 @@ public:
     BiletTuristic(string numar, string oraStart, string oraSfarsit)
         : Bilet(numar, oraStart, oraSfarsit) {}
 
-    double calculeazaCost() const override { return costPeZi; }
+    double calculeazaCost() const override { 
+        return costPeZi; 
+    }
 
-    string getTip() const override { return "Bilet Turistic"; }
+    string getTip() const override { 
+        return "Bilet Turistic"; 
+    }
 };
 
 int main() {
