@@ -54,7 +54,9 @@ public:
         : Bilet(numar, oraStart, oraSfarsit) {}
 
     double calculeazaCost() const override {
-        return (calculeazaDurata() / 60.0) * costPeOra;
+    int durata = calculeazaDurata();
+    int ore = (durata + 59) / 60; 
+    return ore * costPeOra;
     }
 
     string getTip() const override { 
